@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #f8f5f5;
+    }
+    H1 {
+        color: rgb(255, 10, 10);
+    }
+    H2 {
+        color: rgb(10, 47, 255);
+    }
+    h6 {
+        color: rgb(10, 255, 161);
+    }
+    table {
+        width: 50%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: inline-block;
+        width: 80px;
+    }
+    button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        color: #09f76c;
+       
+        border: 1;
+        cursor: pointer;
+        text-decoration-color: #09f76c;
+    }
+    password {
+        color: #f70909;
+        
+        
+    }
+</style>
+<body>
+    <!-- headings range from h1 to h6
+     h1 is the largest heading whereas h6 is the smallest -->
+    <h1>Tables and Headings</h1>
+    <h2>Tables</h2>
+    <h6>My first table</h6>
+    <!-- tables -->
+     <!-- when you want to crweate a table you start by the heading tag table -->
+      <!-- after the heading table you create th and then the tag tr -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tr>
+        <tr>
+            <td>Doe</td>
+            <td>22</td>
+            <td>Chicago</td>
+        </tr>
+    </table>
+    <!-- forms -->
+        <!-- when you want to create a form you start by the heading tag form -->
+        <!-- after the heading form you create label and then the tag input -->
+    <h2>Forms</h2>
+    <form action="/submit" method="post" style="color: #09f76c;"
+    >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="password2">Confirm Password:</label>
+        <input type="password" id="password2" name="password2"><br><br>
+        <button type="submit" style="color: #09f76c;">Submit</button>
+    </form>
+
+</body>
+
+</html>
